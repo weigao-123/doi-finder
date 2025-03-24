@@ -12,13 +12,6 @@ A Python package to find Digital Object Identifiers (DOIs) for academic articles
 
 ## Installation
 
-### From PyPI (Recommended)
-
-```bash
-# Install from PyPI
-pip install doi-finder
-```
-
 ### Development Installation
 
 #### Installing uv (Optional)
