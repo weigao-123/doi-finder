@@ -1,4 +1,4 @@
-# DOI Finder
+# Find DOI
 
 A Python package to find Digital Object Identifiers (DOIs) for academic articles based on their title, authors, or BibTeX entries.
 
