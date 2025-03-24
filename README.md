@@ -7,10 +7,8 @@ A Python package to find Digital Object Identifiers (DOIs) for academic articles
 - Find DOI by article title
 - Find DOI by title and author
 - Parse BibTeX entries and extract DOIs
-- Support for multiple academic databases
 - Command-line interface (CLI)
 - JSON output for integration with other tools
-- Simple and intuitive API
 
 ## Installation
 
