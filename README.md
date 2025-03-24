@@ -143,10 +143,9 @@ print(f"Found DOI: {doi}")
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.8+
 - requests
-- bibtexparser (>=2.0.0a5)
-- beautifulsoup4
+- bibtexparser (>=2.0.0b8)
 
 ## Troubleshooting
 
