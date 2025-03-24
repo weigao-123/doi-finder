@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doi-finder"
+version = "0.1.0"
+description = "Find Digital Object Identifiers (DOIs) for academic articles"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Wei Gao", email = "gao18222967451@gmail.com"}
+]
+keywords = ["doi", "academic", "research", "crossref", "bibtex"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "requests",
+    "bibtexparser>=2.0.0b8",
+]
+
+[project.urls]
+Homepage = "https://github.com/weigao-123/doi-finder"
+"Bug Tracker" = "https://github.com/weigao-123/doi-finder/issues"
+
+[project.scripts]
+doi-finder = "doi_finder.cli:main" 

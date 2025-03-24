@@ -1,0 +1,2 @@
+[console_scripts]
+doi-finder = doi_finder.cli:main
