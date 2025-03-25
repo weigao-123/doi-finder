@@ -39,6 +39,7 @@ git clone https://github.com/weigao-123/find-doi.git
 cd find-doi
 
 # Using uv
+uv venv
 uv pip install -e .
 
 # Or using regular pip
