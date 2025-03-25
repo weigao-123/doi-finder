@@ -35,8 +35,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Clone the repository and install:
 
 ```bash
-git clone https://github.com/yourusername/doi-finder.git
-cd doi-finder
+git clone https://github.com/yourusername/find-doi.git
+cd find-doi
 
 # Using uv
 uv pip install -e .
