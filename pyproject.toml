@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "doi-finder"
+name = "find-doi"
 version = "0.1.0"
 description = "Find Digital Object Identifiers (DOIs) for academic articles"
 readme = "README.md"
@@ -29,8 +29,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/weigao-123/doi-finder"
-"Bug Tracker" = "https://github.com/weigao-123/doi-finder/issues"
+Homepage = "https://github.com/weigao-123/find-doi"
+"Bug Tracker" = "https://github.com/weigao-123/find-doi/issues"
 
 [project.scripts]
-doi-finder = "doi_finder.cli:main" 
+find-doi = "find_doi.cli:main" 

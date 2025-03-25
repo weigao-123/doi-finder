@@ -19,7 +19,7 @@ A Python package to find Digital Object Identifiers (DOIs) for academic articles
 #### Windows
 ```bash
 # PowerShell (recommended)
-iwr -useb https://astral.sh/uv/install.ps1 | iex
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 # Or using pip
 pip install uv
@@ -51,12 +51,7 @@ If you encounter installation issues, you can use the package directly:
 
 1. Install dependencies:
 ```bash
-pip install requests bibtexparser beautifulsoup4
-```
-
-2. Run the provided script:
-```bash
-python run_doi_finder.py "Renewable energy and sustainable development: a crucial review"
+pip install -r requirements.txt
 ```
 
 ## Command-Line Interface
@@ -65,53 +60,53 @@ DOI Finder includes a command-line interface for easy usage without writing Pyth
 
 ```bash
 # Find DOI by article title (simplest form)
-doi-finder "Renewable energy and sustainable development: a crucial review"
+find-doi "Renewable energy and sustainable development: a crucial review"
 
 # With author for better matching
-doi-finder "Renewable energy and sustainable development: a crucial review" --author "Dincer, Ibrahim"
+find-doi "Renewable energy and sustainable development: a crucial review" --author "Dincer, Ibrahim"
 
 # Explicitly using the doi command (same as above)
-doi-finder doi "Renewable energy and sustainable development: a crucial review"
+find-doi doi "Renewable energy and sustainable development: a crucial review"
 
 # Get detailed article information
-doi-finder info "Renewable energy and sustainable development: a crucial review"
+find-doi info "Renewable energy and sustainable development: a crucial review"
 
 # Include full information with abstract
-doi-finder info "Renewable energy and sustainable development: a crucial review" --full
+find-doi info "Renewable energy and sustainable development: a crucial review" --full
 
 # Find DOI from a BibTeX file
-doi-finder bibtex references.bib
+find-doi bibtex references.bib
 
 # Find DOI from stdin
-cat references.bib | doi-finder bibtex -
+cat references.bib | find-doi bibtex -
 
 # Get detailed article information from a BibTeX file
-doi-finder bibtex-info references.bib
+find-doi bibtex-info references.bib
 
 # Output in JSON format
-doi-finder "Renewable energy and sustainable development: a crucial review" --json
+find-doi "Renewable energy and sustainable development: a crucial review" --json
 
 # Using an email to improve CrossRef API rate limits
-doi-finder "Renewable energy and sustainable development: a crucial review" --email "your.email@example.com"
+find-doi "Renewable energy and sustainable development: a crucial review" --email "your.email@example.com"
 ```
 
 ### Alternative Execution Method
 
-If the `doi-finder` command isn't available, you can also run the module directly:
+If the `find-doi` command isn't available, you can also run the module directly:
 
 ```bash
-python -m doi_finder "Renewable energy and sustainable development: a crucial review"
+python -m find-doi "Renewable energy and sustainable development: a crucial review"
 ```
 
 For help on available commands:
 ```bash
-doi-finder --help
+find-doi --help
 ```
 
 ## Python API Usage
 
 ```python
-from doi_finder import DOIFinder
+from find_doi import DOIFinder
 
 # Initialize the DOI finder
 finder = DOIFinder()

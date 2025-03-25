@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-setup.py file for the doi-finder package.
+setup.py file for the find-doi package.
 This is for compatibility with older versions of pip.
 Most configuration is in pyproject.toml.
 """
@@ -10,12 +10,12 @@ from setuptools import setup
 # This setup.py is only for compatibility with older pip versions
 # All configuration is in pyproject.toml
 setup(
-    name="doi-finder",
+    name="find-doi",
     version="0.1.0",
-    packages=["doi_finder"],
+    packages=["find_doi"],
     entry_points={
         'console_scripts': [
-            'doi-finder=doi_finder.cli:main',
+            'find-doi=find_doi.cli:main',
         ],
     },
     python_requires=">=3.8",

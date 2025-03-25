@@ -1,4 +1,4 @@
-from doi_finder import DOIFinder
+from find_doi import DOIFinder
 
 def main():
     # Initialize the DOI finder with an email for better CrossRef API rate limits
